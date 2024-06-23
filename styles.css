@@ -1,0 +1,97 @@
+/* ELEMENT styling */
+
+body {
+  background-color: hsl(47, 88%, 63%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1em; /*16px*/
+  font-family: 'Figtree', sans-serif;
+  margin: 0;
+  min-height: 100vh;
+}
+
+button {
+  border: none;
+  border-radius: 4px;
+  display: block;
+  font-weight: bold;
+  padding: 7px 15px;
+  background-color: hsl(47, 88%, 63%);
+  margin-bottom: 1.25em;
+}
+
+small {
+  font-size: 0.875em;
+}
+
+h1 {
+  font-size: 1.5em;
+  margin-bottom: 1.5rem;
+}
+
+h1:hover {
+  cursor: pointer;
+  color: hsl(47, 88%, 63%);
+  caret-color: black;
+}
+
+p {
+  color: hsl(0, 0%, 50%);
+  line-height: 1.5;
+  font-size: 1.125em;
+}
+
+/* IDs & CLASSES Styling */
+#container {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 20px;
+  box-sizing: border-box;
+  box-shadow: 8px 8px 0px black;
+  max-width: 384px;
+  padding: 1.5em; /*24px*/
+  border: 1.5px solid hsl(0, 0%, 7%);
+}
+
+#container:hover {
+  box-shadow: 16px 16px 0px black;
+}
+
+.hero-img {
+  border-radius: 10px;
+  width: 100%;
+  margin-bottom: 1.5em;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+}
+
+.author-img {
+  width: 32px;
+  height: 32px;
+  margin-right: 12px;
+}
+
+.author-text {
+  font-size: 0.875em;
+  font-weight: bold;
+  color: hsl(0, 0%, 7%);
+}
+
+/* MEDIA QUERY FOR MOBILE */
+/* "if viewport width goes below 600px apply the following css rules */
+@media (max-width: 600px) {
+  #container {
+    max-width: 327px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+}
